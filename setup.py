@@ -448,6 +448,8 @@ deletes the output and hides calls to the compiler and linker.'''
                 #with open(stderr, 'r') as f: log.debug(f.read())
                 return False
             except Exception as e:
+                import traceback
+                traceback.print_exc()
                 log.error(e)
                 return False
             try:
@@ -470,6 +472,8 @@ deletes the output and hides calls to the compiler and linker.'''
                 #with open(stderr, 'r') as f: log.debug(f.read())
                 return False
             except Exception as e:
+                import traceback
+                traceback.print_exc()
                 log.error(e)
                 return False
             # no error, seems to work
