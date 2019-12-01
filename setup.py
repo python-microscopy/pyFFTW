@@ -214,7 +214,7 @@ class EnvironmentSniffer(object):
             self.libraries.append('m')
 
         # main fftw3 header is required
-        if not self.has_header(['fftw3.h'], include_dirs=self.include_dirs):
+        if False:#not self.has_header(['fftw3.h'], include_dirs=self.include_dirs):
             raise CompileError("Could not find the FFTW header 'fftw3.h'")
 
         # mpi is optional
